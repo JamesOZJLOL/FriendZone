@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "890931285406",
+    "firebase_url": "https://fakedatingapp-d3097.firebaseio.com",
+    "project_id": "fakedatingapp-d3097",
+    "storage_bucket": "fakedatingapp-d3097.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:890931285406:android:2b031f39b085d548a85a8f",
+        "android_client_info": {
+          "package_name": "com.example.friendzone"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "890931285406-klmu01om87pcn5t6on6lb2s5ppphek1q.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB7vZO2JCod6zyXUPzRUrgmZUUSW-0_brk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "890931285406-klmu01om87pcn5t6on6lb2s5ppphek1q.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
