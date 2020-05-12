@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".SettingsActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -18,38 +18,37 @@
             android:layout_height="wrap_content"
             android:gravity="center_horizontal"
             android:textAppearance="?android:attr/textAppearanceLarge"
-            android:text="User Registration"
+            android:text="Account Settings"
             android:textAlignment="center" />
 
         <EditText
-            android:id="@+id/editTextEmail"
+            android:id="@+id/editTextUsername"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="15dp"
-            android:hint="Enter your email" />
+            android:hint="Enter your username" />
 
         <EditText
-            android:id="@+id/editTextPassword"
+            android:id="@+id/editTextInterest"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="15dp"
-            android:hint="Enter your password"
-            android:inputType="textPassword" />
+            android:hint="Enter your interest, hobby, favourite pastime"/>
 
         <Button
-            android:id="@+id/buttonRegister"
+            android:id="@+id/buttonSave"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="15dp"
-            android:text="Register User" />
+            android:text="Save" />
 
-        <TextView
-            android:textAlignment="center"
-            android:text="Already registered? Sign in here"
-            android:id="@+id/textViewSignin"
+        <Button
+            android:id="@+id/buttonCancel"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:gravity="center_horizontal" />
+            android:layout_margin="15dp"
+            android:text="cancel" />
+
 
 
     </LinearLayout>
