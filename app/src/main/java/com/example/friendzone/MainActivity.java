@@ -1,6 +1,7 @@
 package com.example.friendzone;
 
 import android.app.ProgressDialog;
+import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.view.View;
@@ -32,6 +33,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         setContentView(R.layout.activity_main);
 
         firebaseAuth = FirebaseAuth.getInstance();
+
+//        if(firebaseAuth.getCurrentUser() != null){
+//            finish();
+//            startActivity(new Intent(getApplicationContext(), HomeActivity.class));
+//        }
 
         progressDialog = new ProgressDialog(this);
 
@@ -66,10 +72,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             @Override
             public void onComplete(@NonNull Task<AuthResult> task) {
                 if(task.isSuccessful()){
-                    Toast.makeText(MainActivity.this,"Registered succesfully", Toast.LENGTH_SHORT).show();
-                    progressDialog.hide();
+                    Toast.makeText(MainActivity.this,"Registered successfully", Toast.LENGTH_SHORT).show();
+                    progressDialog.dismiss();
+                    finish();
+                    startActivity(new Intent(getApplicationContext(), HomeActivity.class));
                 }else{
                     Toast.makeText(MainActivity.this,"Could not register, please try again later", Toast.LENGTH_SHORT).show();
+                    progressDialog.dismiss();
                 }
 
             }
@@ -83,7 +92,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             registerUser();
         }
         if(v == textViewSignin){
-
+            finish();
+            startActivity(new Intent(this, LoginActivity.class));
         }
     }
 }
